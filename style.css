@@ -1,0 +1,350 @@
+*{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.logo{
+    height: 2rem;
+    margin-top: 2rem;
+}
+.highlight{
+    color: rgb(221, 50, 192);
+}
+.responsive-navbar{
+    text-align: center;
+    justify-content: space-between;
+}
+
+.res-nav{
+    background-color: #ffffff;
+    height: 20vh;
+    width: 100vw;
+ 
+    
+}
+    
+.res-nav a{
+   text-decoration: none;
+   color: black;
+  font-weight: 500;
+ }
+   
+.res-nav li{
+    margin: 2rem;
+    display: inline;
+    align-items: center;
+   }
+  
+  .res-nav a:hover,.menu a:hover {
+    background-color: #e242c7;
+  }
+  
+  
+  .menu-icon {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+
+  .menu{
+    display: none;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .menu {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      background-color: #d144ae;
+      position: absolute;
+      top: 1rem;
+     text-decoration: none;
+      list-style: none;
+    }
+    .menu a {
+        text-decoration: none;
+        color: rgb(51, 51, 51);
+       transition: background-color 0.3s;
+      }
+  
+    .menu.show {
+      display: flex;
+    }
+  
+    .menu-icon {
+      display: block;
+    }
+   .responsive-navbar{
+    display: none;
+   }
+
+   #home {
+    flex-direction: column; 
+    text-align: center;
+}
+
+.heading-home h1 {
+    width: 23rem;
+}
+
+.heading-home p {
+    font-size: 1rem; 
+    width: 23rem;
+}
+
+.home-image {
+    max-width: 600px; 
+}
+}
+  
+  /*=========================== RESPONSIVE NAVBAR ===================== */
+
+  #home{
+    width: 100vw;
+    height: 80vh;
+    background-color: rgb(241, 241, 241);
+    display: flex;
+    justify-content: space-between;
+
+  }
+
+  .heading-home{
+   
+    width: 50vw;
+    height: 80vh;
+    padding: 7rem;
+   
+  }
+  .heading-home h1{
+ font-size:  2.5rem;
+ font-weight: 300;
+  }
+
+  .home-img-div{
+    height: 80vh;
+    width: 50vw;
+  }
+
+
+  .home-image{
+    height: 35rem;
+    margin-top: -2rem;
+  }
+/* ================================= */
+
+#health{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(241, 241, 241);
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.prof-img{
+   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2), -5px -5px 10px rgba(0, 0, 0, 0.1);
+    margin-left: 4rem;
+    margin-top: 7rem;
+    width: 80%;
+    max-width: 450px;
+    height: 80vh;
+    border-radius: 60%; 
+}
+
+.health-box{
+border: 1px solid rgb(39, 168, 213);
+height: 7rem;
+width: 7rem;
+text-align: center;
+margin: 0.7rem;
+padding: 7px;
+}
+
+.box{
+    margin-top: 7rem;
+}
+
+ .para-health{
+    margin-top: 3rem;
+    font-size: 1rem;
+    font-weight: 500;
+ } 
+ 
+ .btn-health{
+    padding: 0.5rem;
+    border-radius: 50px;
+    background-color: rgb(39, 168, 213);
+    border: none;
+    margin-top: 1rem;
+ }
+
+ /* HEALTH SECTION */
+
+#location{
+    width: 100vw;
+    height: 120vh;
+    background-color: rgb(241, 241, 241);
+    display: flex;
+    justify-content: space-between;
+}
+.heading-loc{
+   
+    margin: 10rem 0.3rem 10rem 6rem;
+    width: 45vw;
+    height: fit-content;
+
+}
+.heading-loc p{
+    margin-top: 1rem;
+    font-weight: 500;
+}
+.heading-loc h1{
+    font-size: 2.5rem;
+}
+
+.loc-img {
+
+     margin: 10rem 7rem;
+    width: 40vw;
+    height: 35rem;
+   
+  
+}
+.loc-img img{
+    width: 40rem;
+
+}
+/* =========================================== */
+
+.benefits {
+    display: flex;
+    align-items: center; 
+    padding: 2rem;
+}
+
+.vertical-heading {
+    transform: rotate(-90deg);
+    transform-origin: left top; 
+    font-size: 5rem;
+    font-weight: bold;
+    margin-top: 30rem;
+    color: rgb(14, 39, 92);
+ 
+}
+.vertical-head{
+    margin-left: 1rem;
+}
+.benefits-para{
+    height: 39rem;
+    width: 95rem;
+    margin-top: 5rem;
+    border: 5px dashed #000000;
+    border-radius: 3rem;
+    padding: 2rem;
+   }
+
+.benefits-para h3{
+   color:  rgb(39, 168, 213);
+   margin-top: 1rem;
+}
+/* ======================================= */
+.paragraph{
+    width: 99vw;
+    height: 230vh;
+  
+    padding: 6rem;
+}
+.headings{
+    font-size: 3rem;
+    padding: 2rem;
+}
+
+.paragraph p{
+   
+    margin-left: 2rem;
+    padding: 1rem;
+    font-weight: 500;
+}
+/* ================================================= */
+
+/* .produts{
+    width: 99vw;
+    height: 100vh;
+   text-align: center;
+   display: block;
+}
+
+.produts h1{
+   font-size: 2.5rem;
+   padding: 3rem;
+    
+}
+
+.card-list .card-item .card-link{
+    user-select: none;
+    display: block;
+  background-color: #c9c4c8;
+    padding: 18px;
+    border-radius: 12px;
+    text-decoration: none;
+}
+.card-list .card-link .card-image{
+    width: 100%;
+aspect-ratio: 16 / 9;
+object-fit: cover;
+border-radius: 10px;
+}
+.card-list .card-link .badge{
+    color: rgb(0, 0, 0);
+     font-size: 1rem;
+    font-weight: 600;
+
+
+}
+.badge-p{
+    color: #000000;
+    margin-top: 0.8rem;
+}
+
+.shop{
+   padding: 0.8rem 2rem;
+   border-radius: 2rem;
+   border: 0.5px solid grey;
+} */
+
+
+/* =========================== */
+.instructions h3{
+   color:  rgb(39, 168, 213);
+   margin-left: 4rem;
+}
+.instructions ul li{
+    color:  rgb(0, 0, 0);
+    margin-left: 4rem;
+    margin-top: 1rem;
+ }
+
+ .instructions h2{
+    font-size: 3rem;
+    margin-left: 4rem;
+    margin-top: 3rem;
+    color: rgb(221, 50, 192) ;
+ }
+ .ques-list{
+    list-style: none;
+    border: 1px solid black;
+    border-radius: 1.2rem;
+    padding: 1rem;
+    width: 65rem;
+ }
+
+ .contact{
+    width: 60rem;
+    height: 30rem;
+   margin-left: 14rem;
+   margin-top: 5rem;
+   border-radius: 1rem;
+    background-color: rgb(204, 204, 204);
+ }
