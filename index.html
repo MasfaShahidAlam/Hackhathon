@@ -14,6 +14,7 @@
 </head>
 
 <body>
+    
     <nav class="responsive-navbar">
         <ul class="res-nav">
             <li><a href="#"><span class="highlight">Home</span></a></li>
@@ -24,6 +25,14 @@
             <li><a href="#">Become A Retailer</a></li>
             <li><a href="#">Contact Us</a></li>
             <li><a href="#">Recipe</a></li>
+            <a href="#" id="cart-link">
+    <img id="cart" width="50" height="50" src="https://img.icons8.com/ios/50/add-shopping-cart--v1.png" alt="add-shopping-cart" />
+</a>
+<div id="cart-dropdown" style="display: none; position: absolute; top: 60px; right: 20px; background: #fff; border: 1px solid #ccc; padding: 10px; border-radius: 5px; width: 300px;">
+    <h2>Shopping Cart</h2>
+    <ul id="cart-items"></ul>
+    <p>Total: $<span id="cart-total">0</span></p>
+</div>
         </ul>
     </nav>
 
@@ -53,7 +62,8 @@
         </div>
 
         <div class="home-img-div">
-            <img class="home-image" src="Assets/cds_450_v2-1.png" alt="">
+            <img class="home-image-one" src="Assets/cds_450_v2-1.png" alt="">
+            <img class="home-image-two" src="Assets/cds_450_v2-1.png" alt="" style="margin-bottom: 40rem;">
         </div>
 
 
@@ -243,92 +253,97 @@
 
     <section class="produts">
 
-       
-            <h1>Product packaging</h1>
-        
+
+        <h1>Product packaging</h1>
+
 
         <p>CDS22-formula, is available in sachets and capsules to meet specific tastes and needs. <br>
             Each format of CDS22-formula is gluten-free and vegetarian.</p>
 
-   <div class="container swiper">
-    
-        <div class="card-list swiper-wrapper">
-            <li class="card-item swiper-slide">
-                <a href="" class="card-link">
-                    <img src="Assets/cds_112_v2-1.png" alt="Card Image" class="card-image">
-               <h3 class="badge">CDS22-formula <br>
-                <span class="highlight">900 billion sachets</span>
-                </h3>
-                <p class="badge-p">Superior power <br>
-                 Potency: 900 billion live bacteria per sachet</p>
-                 <button class="shop">Shop Now</button>
-              
-                </a>
-            </li>
+        <div class="container swiper">
 
-            <li class="card-item">
-                <a href="" class="card-link">
-                    <img src="Assets/cds_112_" alt="Card Image" class="card-image">
-               <h3 class="badge">CDS22-formula <br>
-                <span class="highlight">900 billion sachets</span>
-                </h3>
-                <p class="badge-p">Superior power <br>
-                 Potency: 900 billion live bacteria per sachet</p>
-                 <button class="shop">Shop Now</button>
-              
-                </a>
-            </li>
+            <div class="card-list swiper-wrapper">
+                <li class="card-item swiper-slide">
+                    <a href="" class="card-link">
+                        <img src="Assets/cds_112_v2-1.png" alt="Card Image" class="card-image">
+                        <h3 class="badge">CDS22-formula <br>
+                            <span class="highlight">900 billion sachets</span>
+                        </h3>
+                        <p class="badge-p">Superior power <br>
+                            Potency: 900 billion live bacteria per sachet</p>
+                        <button class="shop">Shop Now</button>
 
-            <li class="card-item">
-                <a href="" class="card-link">
-                    <img src="Assets/cds_1.png" alt="Card Image" class="card-image">
-               <h3 class="badge">CDS22-formula <br>
-                <span class="highlight">900 billion sachets</span>
-                </h3>
-                <p class="badge-p">Superior power <br>
-                 Potency: 900 billion live bacteria per sachet</p>
-                 <button class="shop">Shop Now</button>
-              
-                </a>
-            </li>
+                    </a>
+                </li>
 
-            <li class="card-item">
-                <a href="" class="card-link">
-                    <img src="Assets/cds_450_v2-1.png" alt="Card Image" class="card-image">
-               <h3 class="badge">CDS22-formula <br>
-                <span class="highlight">900 billion sachets</span>
-                </h3>
-                <p class="badge-p">Superior power <br>
-                 Potency: 900 billion live bacteria per sachet</p>
-                 <button class="shop">Shop Now</button>
-              
-                </a>
-            </li>
+                <li class="card-item swiper-slide">
+                    <a href="" class="card-link">
+                        <img src="Assets/cds_450_v2-1.png" alt="Card Image" class="card-image">
+                        <h3 class="badge">CDS22-formula <br>
+                            <span class="highlight">900 billion sachets</span>
+                        </h3>
+                        <p class="badge-p">Superior power <br>
+                            Potency: 900 billion live bacteria per sachet</p>
+                        <button class="shop">Shop Now</button>
 
-            <li class="card-item">
-                <a href="" class="card-link">
-                    <img src="Assets/cds_112_v2-1.png" alt="Card Image" class="card-image">
-               <h3 class="badge">CDS22-formula <br>
-                <span class="highlight">900 billion sachets</span>
-                </h3>
-                <p class="badge-p">Superior power <br>
-                 Potency: 900 billion live bacteria per sachet</p>
-                 <button class="shop">Shop Now</button>
-              
-                </a>
-            </li>
+                    </a>
+                </li>
+
+                <li class="card-item swiper-slide">
+                    <a href="" class="card-link">
+                        <img src="Assets/cds_112_v2-1.png" alt="Card Image" class="card-image">
+                        <h3 class="badge">CDS22-formula <br>
+                            <span class="highlight">900 billion sachets</span>
+                        </h3>
+                        <p class="badge-p">Superior power <br>
+                            Potency: 900 billion live bacteria per sachet</p>
+                        <button class="shop">Shop Now</button>
+
+                    </a>
+                </li>
+
+                <li class="card-item swiper-slide">
+                    <a href="" class="card-link">
+                        <img src="Assets/cds_450_v2-1.png" alt="Card Image" class="card-image">
+                        <h3 class="badge">CDS22-formula <br>
+                            <span class="highlight">900 billion sachets</span>
+                        </h3>
+                        <p class="badge-p">Superior power <br>
+                            Potency: 900 billion live bacteria per sachet</p>
+                        <button class="shop">Shop Now</button>
+
+                    </a>
+                </li>
+
+                <li class="card-item swiper-slide">
+                    <a href="" class="card-link">
+                        <img src="Assets/cds_112_v2-1.png" alt="Card Image" class="card-image">
+                        <h3 class="badge">CDS22-formula <br>
+                            <span class="highlight">900 billion sachets</span>
+                        </h3>
+                        <p class="badge-p">Superior power <br>
+                            Potency: 900 billion live bacteria per sachet</p>
+                        <button class="shop">Shop Now</button>
+
+                    </a>
+                </li>
+
+            </div>
+          
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
 
         </div>
-        <div class="swiper-pagination"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-
-    </div>
 
 
+        <h2>Your Cart</h2>
+        <ul id="cart"></ul>
+        <p>Total: $<span id="total">0</span></p>
+
+    </section>
    
-   
-        </section> 
+        
+    
 
     <section class="instructions">
         <h3>Follow the dosage instructions indicated on the packaging.</h3>
@@ -357,18 +372,66 @@
             <li class="ques-list">Can CDS22-formula be taken during antibiotic therapy?</li>
             <li class="ques-list">Can CDS22-formula be taken during pregnancy?</li>
         </ul>
-
+    </section>
+<section class="contact-form">
         <div class="contact">
-          <div class="form">
-<form action=""></form>
-          </div>
+            <div class="form">
+                <form action="#">
+
+                    <div class="radio-group">
+                        <label for="">
+                            <input type="radio">Say Hi
+                        </label>
+                        <label for="">
+                            <input type="radio">Get A Quote
+                        </label>
+                    </div>
+
+                    <div class="labels">
+                        <label for="name">Name:</label> <br>
+                        <input type="text" id="name" name="name" placeholder="Enter your name" required
+                            class="input-text">
+                        <br>
+                        <label for="email">Email Address:</label> <br>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required
+                            class="input-text">
+                        <br>
+                        <label for="message">Message:</label> <br>
+                        <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
+                        <br>
+                        <div class="privacy-policy">
+                            <label>
+                                <input type="checkbox" name="privacy" required id="privacyPolicy"> I consent to the processing of personal
+                                data after reading the <a href="#">Privacy
+                                    Policy</a>
+                            </label>
+                        </div>
+
+                        <button class="form-btn" type="submit">Send Message</button>
+                    </div>
+                </form>
+            </div>
+            <div class="last-img">
+                <img src="Assets/logo-cds22.png" alt="" class="img-one">
+<img src="Assets/cds_450_v2-1.png" alt="" class="img-two">
+<img src="Assets/cds_450_v2-1.png" alt="" class="img-three">
+            </div>
+        </div>
+
+        <div class="last-bar">
+<h4>EOS2021 S.R.L. Via Nuoro, 16  – 00040 Ardea (Roma) P.iva: 02102651003</h4>
         </div>
     </section>
 
-
+  
 
     <!-- Swiper  -->
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- firebase -->
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-firestore.js"></script>
+
 
     <script src="app.js"></script>
 </body>

@@ -1,350 +1,737 @@
-*{
+* {
     font-family: sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+  
 }
-.logo{
+
+.logo {
     height: 2rem;
     margin-top: 2rem;
 }
-.highlight{
+
+.highlight {
     color: rgb(221, 50, 192);
 }
-.responsive-navbar{
+
+.responsive-navbar {
     text-align: center;
     justify-content: space-between;
 }
 
-.res-nav{
-    background-color: #ffffff;
+.res-nav {
+   
     height: 20vh;
     width: 100vw;
- 
-    
+
+
 }
-    
-.res-nav a{
-   text-decoration: none;
-   color: black;
-  font-weight: 500;
- }
-   
-.res-nav li{
+
+.res-nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+.res-nav li {
     margin: 2rem;
     display: inline;
     align-items: center;
-   }
-  
-  .res-nav a:hover,.menu a:hover {
-    background-color: #e242c7;
-  }
-  
-  
-  .menu-icon {
+}
+
+
+
+.menu-icon {
     display: none;
     font-size: 1.5rem;
     cursor: pointer;
-  }
+}
 
-  .menu{
+.menu {
     display: none;
-  }
-  
-  /* Responsive Styles */
-  @media (max-width: 768px) {
-    .menu {
-      display: none;
-      flex-direction: column;
-      width: 100%;
-      background-color: #d144ae;
-      position: absolute;
-      top: 1rem;
-     text-decoration: none;
-      list-style: none;
-    }
-    .menu a {
-        text-decoration: none;
-        color: rgb(51, 51, 51);
-       transition: background-color 0.3s;
-      }
-  
-    .menu.show {
-      display: flex;
-    }
-  
-    .menu-icon {
-      display: block;
-    }
-   .responsive-navbar{
-    display: none;
-   }
-
-   #home {
-    flex-direction: column; 
-    text-align: center;
 }
 
-.heading-home h1 {
-    width: 23rem;
-}
 
-.heading-home p {
-    font-size: 1rem; 
-    width: 23rem;
-}
 
-.home-image {
-    max-width: 600px; 
-}
-}
-  
-  /*=========================== RESPONSIVE NAVBAR ===================== */
 
-  #home{
-    width: 100vw;
+#home {
+    max-width: 100%;
     height: 80vh;
     background-color: rgb(241, 241, 241);
     display: flex;
     justify-content: space-between;
 
-  }
+}
 
-  .heading-home{
-   
+.heading-home {
+
     width: 50vw;
     height: 80vh;
     padding: 7rem;
+
+}
+
+.heading-home h1 {
+    font-size: 2.5rem;
+    font-weight: 300;
+}
+
+.home-img-div {
+    height: 70vh;
+    width: 40vw;
+    margin-top: 3rem;
    
-  }
-  .heading-home h1{
- font-size:  2.5rem;
- font-weight: 300;
-  }
+}
 
-  .home-img-div{
-    height: 80vh;
-    width: 50vw;
-  }
-
-
-  .home-image{
+.home-image-one {
+    height: 30rem;
+   
+    margin-left: 2rem;
+}
+.home-image-two {
     height: 35rem;
-    margin-top: -2rem;
-  }
+    margin-top: -32rem;
+    margin-left: -13rem;
+}
+
 /* ================================= */
 
-#health{
-    width: 100vw;
+#health {
+    width: 100%;
     height: 100vh;
     background-color: rgb(241, 241, 241);
     display: flex;
     justify-content: space-between;
-    
+
 }
 
-.prof-img{
-   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2), -5px -5px 10px rgba(0, 0, 0, 0.1);
+.prof-img {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2), -5px -5px 10px rgba(0, 0, 0, 0.1);
     margin-left: 4rem;
     margin-top: 7rem;
     width: 80%;
     max-width: 450px;
     height: 80vh;
-    border-radius: 60%; 
+    border-radius: 60%;
 }
 
-.health-box{
-border: 1px solid rgb(39, 168, 213);
-height: 7rem;
-width: 7rem;
-text-align: center;
-margin: 0.7rem;
-padding: 7px;
+.health-box {
+    border: 1px solid rgb(39, 168, 213);
+    height: 7rem;
+    width: 7rem;
+    text-align: center;
+    margin: 0.7rem;
+    padding: 7px;
 }
 
-.box{
+.box {
     margin-top: 7rem;
 }
 
- .para-health{
+.para-health {
     margin-top: 3rem;
     font-size: 1rem;
     font-weight: 500;
- } 
- 
- .btn-health{
+}
+
+.btn-health {
     padding: 0.5rem;
     border-radius: 50px;
     background-color: rgb(39, 168, 213);
     border: none;
     margin-top: 1rem;
- }
+}
 
- /* HEALTH SECTION */
+/* HEALTH SECTION */
 
-#location{
+#location {
     width: 100vw;
     height: 120vh;
     background-color: rgb(241, 241, 241);
     display: flex;
     justify-content: space-between;
 }
-.heading-loc{
-   
+
+.heading-loc {
+
     margin: 10rem 0.3rem 10rem 6rem;
     width: 45vw;
     height: fit-content;
 
 }
-.heading-loc p{
+
+.heading-loc p {
     margin-top: 1rem;
     font-weight: 500;
 }
-.heading-loc h1{
+
+.heading-loc h1 {
     font-size: 2.5rem;
 }
 
 .loc-img {
 
-     margin: 10rem 7rem;
+    margin: 10rem 7rem;
     width: 40vw;
     height: 35rem;
-   
-  
+
+
 }
-.loc-img img{
+
+.loc-img img {
     width: 40rem;
 
 }
+
 /* =========================================== */
 
 .benefits {
+    background-color: rgb(241, 241, 241);
     display: flex;
-    align-items: center; 
+    align-items: center;
     padding: 2rem;
 }
 
 .vertical-heading {
     transform: rotate(-90deg);
-    transform-origin: left top; 
+    transform-origin: left top;
     font-size: 5rem;
     font-weight: bold;
     margin-top: 30rem;
     color: rgb(14, 39, 92);
- 
+
 }
-.vertical-head{
+
+.vertical-head {
     margin-left: 1rem;
 }
-.benefits-para{
+
+.benefits-para {
     height: 39rem;
     width: 95rem;
     margin-top: 5rem;
     border: 5px dashed #000000;
     border-radius: 3rem;
     padding: 2rem;
-   }
-
-.benefits-para h3{
-   color:  rgb(39, 168, 213);
-   margin-top: 1rem;
 }
+
+.benefits-para h3 {
+    color: rgb(39, 168, 213);
+    margin-top: 1rem;
+}
+
 /* ======================================= */
-.paragraph{
+.paragraph {
     width: 99vw;
     height: 230vh;
-  
+    background-color: rgb(241, 241, 241);
     padding: 6rem;
 }
-.headings{
+
+.headings {
     font-size: 3rem;
     padding: 2rem;
 }
 
-.paragraph p{
-   
+.paragraph p {
+
     margin-left: 2rem;
     padding: 1rem;
     font-weight: 500;
 }
+
 /* ================================================= */
 
-/* .produts{
+.produts {
+    background-color: rgb(241, 241, 241);
     width: 99vw;
-    height: 100vh;
-   text-align: center;
-   display: block;
-}
-
-.produts h1{
-   font-size: 2.5rem;
-   padding: 3rem;
+    height: 120vh;
+    text-align: center;
     
 }
 
-.card-list .card-item .card-link{
-    user-select: none;
+.produts h1 {
+    font-size: 2.5rem;
+    padding: 2rem;
+
+}
+
+.card-list .card-item .card-link {
     display: block;
-  background-color: #c9c4c8;
-    padding: 18px;
-    border-radius: 12px;
-    text-decoration: none;
+ padding: 18px;
+   text-decoration: none;
 }
-.card-list .card-link .card-image{
-    width: 100%;
-aspect-ratio: 16 / 9;
-object-fit: cover;
-border-radius: 10px;
+
+.card-list .card-link .card-image {
+    width: 20rem;
+    height: 21rem;
 }
-.card-list .card-link .badge{
+
+.card-list .card-link .badge {
     color: rgb(0, 0, 0);
-     font-size: 1rem;
+    font-size: 1rem;
     font-weight: 600;
 
 
 }
-.badge-p{
+
+.badge-p {
     color: #000000;
     margin-top: 0.8rem;
 }
 
-.shop{
-   padding: 0.8rem 2rem;
-   border-radius: 2rem;
-   border: 0.5px solid grey;
-} */
-
+.shop {
+    padding: 0.8rem 2rem;
+    border-radius: 2rem;
+    border: 0.5px solid grey;
+}
 
 /* =========================== */
-.instructions h3{
-   color:  rgb(39, 168, 213);
-   margin-left: 4rem;
+.instructions{
+    background-color: rgb(241, 241, 241);
+    
 }
-.instructions ul li{
-    color:  rgb(0, 0, 0);
+.instructions h3 {
+    color: rgb(39, 168, 213);
+    margin-left: 4rem;
+}
+
+.instructions ul li {
+    color: rgb(0, 0, 0);
     margin-left: 4rem;
     margin-top: 1rem;
- }
+}
 
- .instructions h2{
+.instructions h2 {
     font-size: 3rem;
     margin-left: 4rem;
     margin-top: 3rem;
-    color: rgb(221, 50, 192) ;
- }
- .ques-list{
+    color: rgb(221, 50, 192);
+}
+
+.ques-list {
     list-style: none;
     border: 1px solid black;
     border-radius: 1.2rem;
     padding: 1rem;
     width: 65rem;
- }
+}
 
- .contact{
+
+/* Contact */
+.contact {
     width: 60rem;
-    height: 30rem;
-   margin-left: 14rem;
-   margin-top: 5rem;
-   border-radius: 1rem;
-    background-color: rgb(204, 204, 204);
- }
+    height: 32rem;
+    margin-left: 14rem;
+    margin-top: 5rem;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 4px 8px rgba(82, 80, 80, 0.1);
+    background-color: rgb(209, 209, 209);
+    position: relative;
+    /* Set position to relative for proper z-index stacking */
+    z-index: 2;
+
+}
+.contact-form{
+    background-color: rgb(241, 241, 241);
+    
+}
+.form {
+    width: 30rem;
+    height: max-content;
+   
+}
+
+.radio-group {
+    margin: 1rem;
+    padding: 2rem;
+    align-items: center;
+    display: flex;
+    width: 16rem;
+    justify-content: space-between;
+
+}
+
+.labels {
+    width: 20rem;
+    margin-left: 2rem;
+}
+
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+textarea {
+    height: 100px;
+}
+
+.privacy-policy {
+    margin-bottom: 20px;
+}
+
+.privacy-policy input {
+    margin-right: 10px;
+}
+
+.form-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: rgb(39, 168, 213);
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(40, 102, 124);
+}
+
+.last-img .img-one {
+    width: 10rem;
+    margin-top: 5rem;
+    margin-left: 14rem;
+}
+
+.last-img .img-two {
+    width: 23rem;
+    margin-top: 1rem;
+    margin-left: 15rem;
+
+}
+
+.last-img .img-three {
+    width: 23rem;
+    margin-top: -40rem;
+    margin-left: 8rem;
+}
+
+.last-bar {
+    height: 40vh;
+    width: 100%;
+    background-color: rgb(39, 168, 213);
+    margin-top: -2rem;
+    position: absolute;
+    left: 0;
+    border-radius: 5rem 5rem 0 0;
+    z-index: 1;
+}
+.last-bar h4{
+ padding-left: 25rem;
+ padding-top: 8rem;
+    color: aliceblue;
+}
+
+
+/* =============================Responsive Styles ======================*/
+@media (max-width: 430px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        height: 20rem;
+        background-color: #c07eb0;
+        position: absolute;
+        top: 2rem;
+        text-decoration: none;
+        list-style: none;
+        justify-content: space-between;
+        padding: 2rem;
+    }
+
+    .menu a {
+       
+        text-decoration: none;
+        color: rgb(241, 238, 238);
+        transition: background-color 0.3s;
+        margin-left: 2rem;
+     
+    }
+   
+
+    .menu.show {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .responsive-navbar {
+        display: none;
+    }
+
+    #home {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .heading-home h1 {
+        width: 20rem;
+        margin-left: -3rem;
+    }
+
+    .heading-home p {
+        font-size: 1rem;
+        width: 23rem;
+        margin-left: -4rem;
+    }
+
+    .home-image-one , .home-image-two {
+       display: none;
+    }
+    
+#health {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(241, 241, 241);
+    display: block;
+   
+
+}
+
+.prof-img {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2), -5px -5px 10px rgba(0, 0, 0, 0.1);
+    margin-left: 4rem;
+    margin-top: -9rem;
+    width: 48%;
+    height: 40vh;
+    border-radius: 60%;
+}
+
+.health-box {
+  display: none;
+}
+
+
+
+#location {
+    width: 100vw;
+    height: 170vh;
+    background-color: rgb(241, 241, 241);
+    display: block;
+
+}
+
+.heading-loc {
+   width: 40vw;
+    height: fit-content;
+
+}
+
+.heading-loc p {
+    margin-top: 1rem;
+    font-weight: 100;
+    font-size: 1rem;
+}
+
+.heading-loc h1 {
+    font-size: 2.5rem;
+}
+
+
+
+.loc-img img {
+  
+    display: none;
+
+
+}
+
+.benefits {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+
+.vertical-heading {
+    transform: rotate(-90deg);
+    transform-origin: left top;
+    font-size: 2.5rem;
+    font-weight: bold;
+   
+    color: rgb(14, 39, 92);
+
+}
+
+
+
+.benefits-para {
+    height: 50rem;
+   
+    margin-top: 5rem;
+    border: 2px dashed #000000;
+    border-radius: 3rem;
+    padding: 1rem;
+    font-size: 0.6rem;
+}
+
+.benefits-para h3 {
+    color: rgb(39, 168, 213);
+    margin-top: 0.9rem;
+}
+
+.paragraph {
+    width: 99vw;
+    height: 230vh;
+
+    padding: 1rem;
+}
+
+.headings {
+    font-size: 2rem;
+    padding: 2rem;
+}
+
+.paragraph p {
+
+    margin-left: 1rem;
+    padding: 1rem;
+    font-weight: 200;
+}
+
+
+.instructions{
+    margin-top: -10rem;
+}
+.instructions h3 {
+    color: rgb(39, 168, 213);
+    margin-left: 1rem;
+}
+
+.instructions ul li {
+    color: rgb(0, 0, 0);
+    margin-left: 1.2rem;
+    margin-top: 1rem;
+}
+
+.instructions h2 {
+    font-size: 2rem;
+    margin-left: 1rem;
+    color: rgb(221, 50, 192);
+}
+
+.ques-list {
+    list-style: none;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    width: 25rem;
+}
+
+
+
+/* =============================Contact ========================== */
+.contact-form{
+    height: 115vh;
+    width: 90vw;
+    align-items: center;
+    overflow: hidden;
+}
+
+
+.contact {
+    width: 23rem;
+    height: 32rem;
+    margin-left: 1rem;
+    margin-top: 5rem;
+    border-radius: 1rem;
+  
+
+}
+
+.form {
+    width: 30rem;
+    height: max-content;
+}
+
+.radio-group {
+    margin: 1rem;
+    padding: 2rem;
+    align-items: center;
+    display: flex;
+    width: 16rem;
+    justify-content: space-between;
+
+}
+
+.labels {
+    width: 20rem;
+    margin-left: 2rem;
+}
+
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+textarea {
+    height: 100px;
+}
+
+.privacy-policy {
+    margin-bottom: 20px;
+}
+
+.privacy-policy input {
+    margin-right: 10px;
+}
+
+.form-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: rgb(39, 168, 213);
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(40, 102, 124);
+}
+
+
+
+
+
+
+.last-bar {
+    height: 20vh;
+    width: 100%;
+    background-color: rgb(39, 168, 213);
+    margin-top: -2rem;
+    position: absolute;
+    left: 0;
+    border-radius: 5rem 5rem 0 0;
+    z-index: 1;
+}
+.last-bar h4{
+ padding-left: 1rem;
+ padding-top: 5rem;
+ font-size: 0.7rem;
+    color: aliceblue;
+}
+
+}
+
