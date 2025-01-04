@@ -1,50 +1,55 @@
-// const firebaseConfig = {
-//     apiKey: "AIzaSyDfDdT28e4AQOFxqJ3SzDEyz3OzYJWwXD4",
-//     authDomain: "hackhathon-cb8a2.firebaseapp.com",
-//     databaseURL: "https://hackhathon-cb8a2-default-rtdb.firebaseio.com",
-//     projectId: "hackhathon-cb8a2",
-//     storageBucket: "hackhathon-cb8a2.firebasestorage.app",
-//     messagingSenderId: "1022003199188",
-//     appId: "1:1022003199188:web:59b794275d2029f5390f41"
-//   };
+const firebaseConfig = {
+  apiKey: "AIzaSyBq4HkaiRFZu4__JwdDz20S44qA-SnzCCQ",
+  authDomain: "contactform-d6e36.firebaseapp.com",
+  databaseURL: "https://contactform-d6e36-default-rtdb.firebaseio.com",
+  projectId: "contactform-d6e36",
+  storageBucket: "contactform-d6e36.firebasestorage.app",
+  messagingSenderId: "730798739472",
+  appId: "1:730798739472:web:8353804ade70a10798ba95"
+};
 
+// initialize firebase
 
-//   firebase.initializeApp(firebaseConfig);
-//   form.addEventListener("submit", async (e) => {
-//     e.preventDefault();
+firebase.initializeApp(firebaseConfig);
 
- 
-//     const name = document.getElementById("name").value;
-//     const email = document.getElementById("email").value;
-//     const message = document.getElementById("message").value;
-//     const privacyPolicy = document.getElementById("privacyPolicy").checked;
+// refrence your database
+var contactFormDB = firebase.database().ref('contactForm');
 
-//     console.log(name, email, message, privacyPolicy); 
+document.getElementById('contactForm').addEventListener('submit', submitForm)
 
-//     if (!privacyPolicy) {
-//       alert("You must agree to the privacy policy!");
-//       return;
-//     }
+function submitForm(e){
+  e.preventDefault();
 
-   
-//     try {
-//       await db.collection("contacts").add({
-//         name,
-//         email,
-//         message,
-//         timestamp: firebase.firestore.FieldValue.serverTimestamp(),
-//       });
-//       alert("Message sent successfully!");
-//       form.reset(); 
-//     } catch (error) {
-//       console.error("Error sending message: ", error);
-//       alert("An error occurred. Please try again.");
-//     }
-// });
+  var name = getElementVal('name')
+  var emailid = getElementVal('emailid')
+  var msgContent = getElementVal('msgContent')
+  
+  saveMessages(name, emailid, msgContent)
 
+//  enable alert
+document.querySelector('.alert').style.display = "block";
 
+// remove the alert
+setTimeout(() =>{
+  document.querySelector('.alert').style.display = "none";
+}, 3000)
 
+document.getElementById("contactForm").reset();
 
+}
+const saveMessages =(name, emailid, msgContent) => {
+  var newContactForm = contactFormDB.push();
+
+  newContactForm.set({
+    name : name ,
+    emailid : emailid ,
+    msgContent : msgContent,
+  });
+}
+
+const getElementVal = (id) =>{
+  return document.getElementById(id).value;
+}
 function toggleNavbar() {
     const menu = document.querySelector('.menu');
     menu.classList.toggle('show');

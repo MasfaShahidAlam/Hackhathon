@@ -117,7 +117,7 @@
 }
 
 .health-box {
-    border: 1px solid rgb(39, 168, 213);
+    border: 2px dashed rgb(39, 168, 213);
     height: 7rem;
     width: 7rem;
     text-align: center;
@@ -289,7 +289,7 @@
 
 /* =========================== */
 .instructions{
-    background-color: rgb(241, 241, 241);
+ margin: 4rem;
     
 }
 .instructions h3 {
@@ -320,7 +320,7 @@
 
 
 /* Contact */
-.contact {
+.container{
     width: 60rem;
     height: 32rem;
     margin-left: 14rem;
@@ -434,7 +434,16 @@ button:hover {
     color: aliceblue;
 }
 
-
+.alert{
+    width: 100%;
+    background-color: rgb(41, 221, 101) ;
+    padding: 10px 20px;
+    border: 5px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 900;
+    display: none;
+}
 /* =============================Responsive Styles ======================*/
 @media (max-width: 430px) {
     .menu {
@@ -613,7 +622,7 @@ button:hover {
 
 .instructions ul li {
     color: rgb(0, 0, 0);
-    margin-left: 1.2rem;
+    margin-left: 1rem;
     margin-top: 1rem;
 }
 
@@ -628,11 +637,14 @@ button:hover {
     border: 1px solid black;
     border-radius: 0.5rem;
     padding: 0.5rem;
-    width: 25rem;
+    width: 20rem;
 }
 
-
-
+/* product */
+.produts{
+   
+    align-items: center;
+}
 /* =============================Contact ========================== */
 .contact-form{
     height: 115vh;
@@ -642,7 +654,7 @@ button:hover {
 }
 
 
-.contact {
+.container {
     width: 23rem;
     height: 32rem;
     margin-left: 1rem;
